@@ -36,11 +36,11 @@
 {{- end -}}
 
 {{- if .IsPage -}}
-  {{- with .Site.Author.social.facebook -}}
-    <meta property='article:author' content='https://facebook.com/{{ . }}'>
+  {{- with .Site.Author.social.twitter -}}
+    <meta property='article:author' content='https://twitter.com/{{ . }}'>
   {{- end -}}
-  {{- with .Site.Social.facebook -}}
-    <meta property='article:publisher' content='https://facebook.com/{{ . }}'>
+  {{- with .Site.Social.twitter -}}
+    <meta property='article:publisher' content='https://twitter.com/{{ . }}'>
   {{- end -}}
   <meta property='article:section' content='{{ .Section | title }}'>
   {{- range .Params.tags -}}
