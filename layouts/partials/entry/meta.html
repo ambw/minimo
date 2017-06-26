@@ -4,7 +4,7 @@
     {{ partial "svg/icons.html" "calendar" }}
     <span class='screen-reader'>Posted on </span>
     <time class='date' datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
-      {{- .Date.Format ( or .Site.Params.dateFormat "2006, Jan 02" ) -}}
+       {{- .Date.Format "2006, Jan 02" -}}
     </time>
   </span>
   {{ with .Site.Author.name }}
