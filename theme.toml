@@ -16,7 +16,8 @@ features = [
   "minimalist",
   "pagination",
   "single-column",
-  "social-menu"
+  "social-menu",
+  "robots.txt"
 ]
 min_version = 0.20
 
