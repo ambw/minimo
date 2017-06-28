@@ -1,0 +1,4 @@
+User-agent: *
+
+{{ range where .Data.Pages "Section" "word" }}
+Disallow: {{.RelPermalink}}{{end}}

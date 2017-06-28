@@ -3,7 +3,10 @@
 <main class='main'>
   <section class='list-container'>
     <h1 class='list-title title'>
-      Recent Posts
+      {{- if .Data.Singular -}}
+          <span class='taxonomy-type'>{{ .Data.Singular | title }}: </span>
+      {{- end -}}
+      {{- .Title -}}
     </h1>
     <div class='list'>
       {{ range .Paginator.Pages }}
